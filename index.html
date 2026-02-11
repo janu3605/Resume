@@ -4,239 +4,170 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Jaswanth Reddy | Resume</title>
-  <style>
-    :root {
-      --bg: #f5f7fb;
-      --card: #ffffff;
-      --text: #1f2937;
-      --muted: #4b5563;
-      --accent: #0f766e;
-      --border: #e5e7eb;
-    }
-
-    * {
-      box-sizing: border-box;
-    }
-
-    body {
-      margin: 0;
-      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-      color: var(--text);
-      background: linear-gradient(180deg, #eef7f7 0%, var(--bg) 100%);
-      line-height: 1.5;
-    }
-
-    .container {
-      max-width: 900px;
-      margin: 2rem auto;
-      padding: 0 1rem;
-    }
-
-    .resume {
-      background: var(--card);
-      border: 1px solid var(--border);
-      border-radius: 12px;
-      padding: 1.5rem;
-      box-shadow: 0 10px 25px rgba(15, 23, 42, 0.06);
-    }
-
-    h1, h2, h3 {
-      margin: 0;
-    }
-
-    header {
-      border-bottom: 1px solid var(--border);
-      padding-bottom: 1rem;
-      margin-bottom: 1rem;
-    }
-
-    .name {
-      font-size: 2rem;
-      color: var(--accent);
-    }
-
-    .contact {
-      margin-top: 0.5rem;
-      color: var(--muted);
-      font-size: 0.95rem;
-    }
-
-    .contact a {
-      color: var(--accent);
-      text-decoration: none;
-      margin-right: 0.5rem;
-    }
-
-    section {
-      margin-top: 1.25rem;
-    }
-
-    section h2 {
-      font-size: 1.1rem;
-      color: #0b4f4b;
-      border-left: 4px solid var(--accent);
-      padding-left: 0.5rem;
-      margin-bottom: 0.75rem;
-    }
-
-    .item {
-      margin-bottom: 0.85rem;
-    }
-
-    .item-title {
-      font-weight: 600;
-    }
-
-    .item-meta {
-      color: var(--muted);
-      font-size: 0.92rem;
-    }
-
-    ul {
-      margin: 0.35rem 0 0.75rem 1.1rem;
-      padding: 0;
-    }
-
-    .skills-list p {
-      margin: 0.35rem 0;
-    }
-
-    .profiles p {
-      margin: 0.3rem 0;
-    }
-
-    @media (max-width: 600px) {
-      .name {
-        font-size: 1.6rem;
-      }
-
-      .resume {
-        padding: 1rem;
-      }
-    }
-  </style>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <div class="container">
-    <main class="resume">
-      <header>
-        <h1 class="name">Jaswanth Reddy</h1>
-        <div class="contact">
-          <div>Phone: +91 8019171595</div>
-          <div>Email: <a href="mailto:janu3605a@email.com">janu3605a@email.com</a></div>
+  <div class="page">
+    <main class="resume-sheet">
+      <header class="hero">
+        <div class="top-contact">
+          <a href="tel:+918019171595">+91 8019171595</a>
+          <a href="mailto:janu3605a@email.com">janu3605a@email.com</a>
+          <a href="https://github.com/janu3605" target="_blank" rel="noopener noreferrer">github.com/janu3605</a>
+          <a href="https://www.linkedin.com/in/jaswanth-reddy" target="_blank" rel="noopener noreferrer">linkedin.com/in/jaswanth-reddy</a>
+        </div>
+
+        <div class="hero-row">
           <div>
-            GitHub:
-            <a href="https://github.com/janu3605" target="_blank" rel="noopener noreferrer">github.com/janu3605</a>
-            | LinkedIn:
-            <a href="https://www.linkedin.com/in/jaswanth-reddy" target="_blank" rel="noopener noreferrer">linkedin.com/in/jaswanth-reddy</a>
+            <p class="eyebrow">Resume</p>
+            <h1>Jaswanth Reddy</h1>
+            <p class="role">Computer Science and Engineering Student</p>
+            <p class="summary">
+              Builder focused on web apps, AI experiments, and automation workflows.
+              I like turning practical ideas into projects with clean execution.
+            </p>
+          </div>
+          <div class="photo-card" aria-label="Profile placeholder">
+            <img src="photo.jpg">
+            <!-- <span>JR</span> -->
           </div>
         </div>
       </header>
 
-      <section>
-        <h2>Education</h2>
-        <div class="item">
-          <div class="item-title">Institute of Aeronautical Engineering, Hyderabad, India</div>
-          <div class="item-meta">B.Tech in Computer Science and Engineering | Expected May 2027 | CGPA: 8.48</div>
-        </div>
-        <div class="item">
-          <div class="item-title">Narayana Junior College, Hyderabad, India</div>
-          <div class="item-meta">Intermediate | June 2023 | CGPA: 9.4</div>
-        </div>
-        <div class="item">
-          <div class="item-title">Lotus Lap Public School, Hyderabad, India</div>
-          <div class="item-meta">SSC | July 2021 | CGPA: 10</div>
-        </div>
-      </section>
+      <section class="content-grid">
+        <div class="left-col">
+          <article class="block">
+            <h2>Experience</h2>
+            <div class="item">
+              <div class="item-head">
+                <h3>Intern, SmartzyEdu</h3>
+                <p>May 2025 - Oct 2025</p>
+              </div>
+              <p class="item-meta">Hyderabad, India</p>
+              <ul>
+                <li>Applied classroom knowledge in real-world product and team scenarios.</li>
+                <li>Worked with teams to analyze problems and contribute practical solutions.</li>
+                <li>Improved hands-on technical skill across multiple software tools.</li>
+                <li>Tracked and evaluated operational data to support better decisions.</li>
+              </ul>
+            </div>
 
-      <section class="skills-list">
-        <h2>Technical Skills</h2>
-        <p><strong>Programming Languages:</strong> Python, C#, Java, JavaScript</p>
-        <p><strong>Frontend:</strong> React.js, HTML/CSS</p>
-        <p><strong>Backend:</strong> Node.js, Supabase, MySQL</p>
-        <p><strong>Game Development:</strong> Unity, Blender (3D modeling and asset creation)</p>
-        <p><strong>Machine Learning &amp; AI:</strong> Hugging Face Transformers, Ollama, fine-tuning LLMs</p>
-        <p><strong>Automation Tools:</strong> n8n (workflow automation)</p>
-        <p><strong>Cloud &amp; Mobile:</strong> AWS Fundamentals, Oracle AI Foundations, Firebase, Android Studio</p>
-      </section>
+            <div class="item">
+              <div class="item-head">
+                <h3>Designer, TEDx IARE</h3>
+                <p>Feb 2025 - Apr 2025</p>
+              </div>
+              <p class="item-meta">Hyderabad, India</p>
+              <ul>
+                <li>Handled multiple design projects and delivered on schedule.</li>
+                <li>Used structured feedback to optimize output quality and process speed.</li>
+                <li>Designed promotional material that improved event participation.</li>
+              </ul>
+            </div>
+          </article>
 
-      <section>
-        <h2>Internships</h2>
-        <div class="item">
-          <div class="item-title">Intern - SmartzyEdu, Hyderabad, India</div>
-          <div class="item-meta">May 2025 - Oct 2025</div>
-          <ul>
-            <li>Applied academic knowledge to real-world industry scenarios.</li>
-            <li>Collaborated in teams to analyze problems and build practical solutions.</li>
-            <li>Improved proficiency across essential software tools and technical skills.</li>
-            <li>Used analytical skills to track and evaluate operational data.</li>
-          </ul>
-        </div>
-        <div class="item">
-          <div class="item-title">Designer - TEDx IARE, Hyderabad, India</div>
-          <div class="item-meta">Feb 2025 - Apr 2025</div>
-          <ul>
-            <li>Managed multiple design projects and delivered work on time within constraints.</li>
-            <li>Used feedback to optimize designs and improve process efficiency.</li>
-            <li>Created promotional material that helped increase event participation.</li>
-          </ul>
-        </div>
-      </section>
+          <article class="block">
+            <h2>Projects</h2>
+            <div class="item">
+              <div class="item-head">
+                <h3>Personalized Instagram Chatbot</h3>
+                <p>Nov 2025</p>
+              </div>
+              <p class="item-meta">Python, Hugging Face Transformers, Ollama, DialoGPT</p>
+              <ul>
+                <li>Fine-tuned DialoGPT-medium on personal Instagram conversations.</li>
+                <li>Trained using causal language modeling in Google Colab.</li>
+                <li>Built Instagram-like conversation simulation for realistic reply testing.</li>
+              </ul>
+            </div>
 
-      <section>
-        <h2>Projects</h2>
-        <div class="item">
-          <div class="item-title">Personalized Instagram Chatbot</div>
-          <div class="item-meta">Python, Hugging Face Transformers, Ollama, DialoGPT | Nov 2025</div>
-          <ul>
-            <li>Fine-tuned Microsoft DialoGPT-medium on personal Instagram chat data.</li>
-            <li>Implemented causal language modeling training in Google Colab for realistic responses.</li>
-            <li>Simulated Instagram-like chats to test expected replies and personalization quality.</li>
-          </ul>
-        </div>
-        <div class="item">
-          <div class="item-title">Coinfolio Website</div>
-          <div class="item-meta">React.js, JavaScript, n8n | Sep 2025</div>
-          <ul>
-            <li>Built a personal website to showcase a coin collection.</li>
-            <li>Created backend automations in n8n for data population and real-time synchronization.</li>
-          </ul>
-        </div>
-        <div class="item">
-          <div class="item-title">Drive Safe Application</div>
-          <div class="item-meta">Flutter, Android Studio, Firebase | May 2024</div>
-          <ul>
-            <li>Designed a mobile app that encourages safe driving habits.</li>
-            <li>Integrated real-time alerts for unsafe driving behavior and distractions.</li>
-          </ul>
-        </div>
-      </section>
+            <div class="item">
+              <div class="item-head">
+                <h3>Coinfolio Website</h3>
+                <p>Sep 2025</p>
+              </div>
+              <p class="item-meta">React.js, JavaScript, n8n</p>
+              <ul>
+                <li>Built a personal coin collection showcase website.</li>
+                <li>Used n8n automations for backend data population and sync.</li>
+              </ul>
+            </div>
 
-      <section>
-        <h2>Certifications</h2>
-        <ul>
-          <li>AWS Cloud Foundations (Dec 2025)</li>
-          <li>NPTEL - DSA, Introduction to ML (Nov 2025)</li>
-          <li>Oracle Cloud Infrastructure AI Foundations Associate (Aug 2025)</li>
-          <li>Forage Job Simulations (June 2025)</li>
-          <li>Working Intern Certificate - SmartzyEdu (May 2025)</li>
-          <li>HackerRank Certificates - Intermediate SQL, Java, Python (March 2024)</li>
-          <li>HackRush 2.0 and 3.0 Certificate - IARE (June 2024)</li>
-        </ul>
-      </section>
+            <div class="item">
+              <div class="item-head">
+                <h3>Drive Safe Application</h3>
+                <p>May 2024</p>
+              </div>
+              <p class="item-meta">Flutter, Android Studio, Firebase</p>
+              <ul>
+                <li>Created a mobile app to support safer driving habits.</li>
+                <li>Integrated real-time alerts for distraction and unsafe behavior.</li>
+              </ul>
+            </div>
+          </article>
+        </div>
 
-      <section class="profiles">
-        <h2>Coding Profiles</h2>
-        <p>HackerRank: 3 badges (Java, Python, SQL)</p>
-        <p>LeetCode: 80+ problems solved</p>
-        <p>GeeksforGeeks: 90+ problems solved</p>
-        <p>Trailhead: 12,000 points in a week of training</p>
-      </section>
+        <aside class="right-col">
+          <article class="block light">
+            <h2>Education</h2>
+            <div class="mini-item">
+              <h3>Institute of Aeronautical Engineering</h3>
+              <p>B.Tech CSE</p>
+              <p>Expected May 2027</p>
+              <p>CGPA: 8.48</p>
+            </div>
+            <div class="mini-item">
+              <h3>Narayana Junior College</h3>
+              <p>Intermediate, June 2023</p>
+              <p>CGPA: 9.4</p>
+            </div>
+            <div class="mini-item">
+              <h3>Lotus Lap Public School</h3>
+              <p>SSC, July 2021</p>
+              <p>CGPA: 10</p>
+            </div>
+          </article>
 
-      <section>
-        <h2>Online Presence</h2>
-        <p><strong>Portfolio:</strong> DynamicPortfolio - features AI/ML projects, technical blogs, coding challenges, and personal works.</p>
-        <p><strong>GitHub:</strong> Profile README and repositories showcasing personal and academic projects.</p>
+          <article class="block light">
+            <h2>Skills</h2>
+            <div class="tag-list">
+              <span>Python</span><span>C#</span><span>Java</span><span>JavaScript</span>
+              <span>React.js</span><span>HTML/CSS</span><span>Node.js</span><span>MySQL</span>
+              <span>Supabase</span><span>Unity</span><span>Blender</span><span>Hugging Face</span>
+              <span>Ollama</span><span>LLM Fine-tuning</span><span>n8n</span><span>AWS</span>
+              <span>Oracle AI</span><span>Firebase</span><span>Android Studio</span>
+            </div>
+          </article>
+
+          <article class="block light">
+            <h2>Certifications</h2>
+            <ul class="compact-list">
+              <li>AWS Cloud Foundations (Dec 2025)</li>
+              <li>NPTEL DSA and Intro to ML (Nov 2025)</li>
+              <li>OCI AI Foundations Associate (Aug 2025)</li>
+              <li>Forage Job Simulations (Jun 2025)</li>
+              <li>Working Intern Certificate - SmartzyEdu (May 2025)</li>
+              <li>HackerRank Intermediate SQL, Java, Python (Mar 2024)</li>
+              <li>HackRush 2.0 and 3.0 - IARE (Jun 2024)</li>
+            </ul>
+          </article>
+
+          <article class="block light">
+            <h2>Coding Profiles</h2>
+            <ul class="compact-list">
+              <li>HackerRank: 3 badges (Java, Python, SQL)</li>
+              <li>LeetCode: 80+ problems solved</li>
+              <li>GeeksforGeeks: 90+ problems solved</li>
+              <li>Trailhead: 12,000 points in a training week</li>
+            </ul>
+          </article>
+
+          <article class="block light">
+            <h2>Online Presence</h2>
+            <p><strong>Portfolio:</strong> DynamicPortfolio with AI/ML projects, blogs, coding challenges, and personal works.</p>
+            <p><strong>GitHub:</strong> README plus personal and academic repositories.</p>
+          </article>
+        </aside>
       </section>
     </main>
   </div>
